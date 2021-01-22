@@ -17,7 +17,7 @@ const TestProvider = memo(({ children }) => {
       console.log(`Clear interval for context ${someValue}`)
       clearInterval(interval)
     }
-  }, [])
+  }, [someValue])
 
   return (
     <TestContext.Provider value={{ someValue }}>
